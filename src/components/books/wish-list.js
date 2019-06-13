@@ -16,7 +16,7 @@ class WishList extends React.Component {
   render() {
     return (<div className="row book-list">
     { this.datastore.map((book) =>
-        <ListItem book={book} parent={this} >
+        <ListItem book={book} parent={this} key={book.id}>
         </ListItem>
     )}
     </div>)
